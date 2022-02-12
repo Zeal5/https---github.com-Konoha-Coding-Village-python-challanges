@@ -1,11 +1,11 @@
-
+#add a dot after each letter
 def add_dots(s):
     s_dot = '.'.join(s)
    
 
     return s_dot
-#print(add_dots('TEST'))
 
+#remove dot after each letter
 def remove_dots(s):
     s_nodots = ''
     for i in s :
@@ -14,9 +14,9 @@ def remove_dots(s):
         else:
             s_nodots += i
     return s_nodots 
-#print(remove_dots('T.E.S.T'))
 
-remove_dots(add_dots('abcde'))
+#should return the same string as input
+remove_dots(add_dots(input()))
 
     
 
